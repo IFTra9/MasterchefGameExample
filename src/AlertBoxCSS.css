@@ -1,0 +1,10 @@
+AnchorPane{
+   
+   -fx-background-image: url("pictures/finalstage.png");
+}
+
+Button{
+   
+    -fx-background-image: url("pictures/yellow_button_start.png");
+}
+

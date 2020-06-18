@@ -1,0 +1,41 @@
+AnchorPane {
+   
+   /*-fx-background-image: url("pictures/sub_panel2.png");*/
+   /*-fx-background-color:transparent;*/
+}
+.radio-button .radio{
+-fx-border-width     : 3px   ;
+-fx-border-color     : #752001  ;
+-fx-background-color : white ;
+-fx-background-image : null  ;
+-fx-border-radius    : 18px  ;
+-fx-height           : 15.5px  ; /* Not working */
+height               : 5px   ; /* Not working */
+}
+.radio-button .radio:selected{
+-fx-background-color : grey ;
+-fx-background-image : null  ;
+}
+.radio-button -radio:armed{
+-fx-background-color : white ;
+-fx-background-image : null  ;
+}
+.radio-button -radio:determinate{
+-fx-background-color : red ;
+-fx-background-image : null  ;
+}
+.radio-button -radio:indeterminate{
+-fx-background-color : white ;
+-fx-background-image : null  ;
+}
+
+#startGame{ 
+   -fx-background-image:url("pictures/yellow_button_start.png");
+   -fx-text-color: #752001;
+   
+}
+#chooseYourPlayer{
+   
+    -fx-background-image:url("pictures/yellow_button13.png");
+    -fx-text-color: #752001;
+}

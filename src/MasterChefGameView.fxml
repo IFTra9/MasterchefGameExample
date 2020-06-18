@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="mainPane" fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MasterChefGameViewController">
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1000.0">
+         <children>
+            <ImageView fx:id="background" fitHeight="562.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/background_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="background2" fitHeight="562.0" fitWidth="1000.0" layoutX="999.0" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/background_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="newChefPlayer" layoutX="475.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageLabel" fitHeight="60.0" fitWidth="217.0" layoutX="780.0" layoutY="8.0" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/buttonBlue.png" />
+               </image>
+            </ImageView>
+            <Label id="labelPoints" fx:id="labelPoints" alignment="CENTER" contentDisplay="CENTER" layoutX="830.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="POINTS: " />
+            <ImageView fx:id="thumbsUp" fitHeight="150.0" fitWidth="200.0" layoutX="403.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pictures/thumbsup.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="thumbsDown" fitHeight="150.0" fitWidth="200.0" layoutX="530.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@pictures/thumbsdown.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

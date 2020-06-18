@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelpSubSceneController">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="530.0">
+         <image>
+            <Image url="@pictures/yellow_panel.png" />
+         </image>
+      </ImageView>
+      <GridPane alignment="CENTER" hgap="10.0" layoutX="18.0" layoutY="50.0" prefHeight="249.0" prefWidth="453.0" vgap="20.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="59.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@pictures/knife.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="66.0" fitWidth="72.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@pictures/tomato.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="apples" strokeType="OUTSIDE" strokeWidth="0.0" text="Collect all apples to score" textAlignment="CENTER" wrappingWidth="408.19921875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="knife" strokeType="OUTSIDE" strokeWidth="0.0" text="Run from a knife to save a life" textAlignment="CENTER" wrappingWidth="402.19921875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="end" strokeType="OUTSIDE" strokeWidth="0.0" text="You have 3 lives till you die." textAlignment="CENTER" wrappingWidth="402.19921875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="62.0" fitWidth="72.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@pictures/icons8_exit_sign_50px_3.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+   </children>
+</AnchorPane>
